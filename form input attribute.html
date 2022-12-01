@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Form  input attributes</title>
+    </head>
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width,initialscale=1.0">
+    <meta charset="UTF-8">
+    <body style="background-color:aqua">
+        <form>
+                <label for="Cars">Select your fav car</label>
+                <select id="Cars" size="3" multiple>
+                <option value="Lambo">Lamborghini</option>
+                <option value="Porsche">Porsche</option>
+                <option value="GT">GT</option>
+                </select>
+                <label for="Lambo">Lambo</label>
+                <input type="radio" name="cars" id="Lambo" value="Lambo">
+                <label for="Porsche">porsche</label>
+                <input type="radio" name="cars" id="Porsche" value="porsche">
+                <label for="GT">GT</label>
+                <input type="radio" name="cars" id="GT" value="GT">
+                <fieldset>
+                    <legend>personal info</legend>
+                    <input type="text" id="name" value="Vicky" readonly>
+                    <input type="password" id="pwd" maxlength="4"> 
+                </fieldset>
+                <input list="Timing">
+                <datalist id="Timing">
+                    <option value="10.00pm">10.00pm</option>
+                    <option value="11.00pm">11.00pm</option>
+                    <option value="12.00pm">12.000pm</option>
+                </datalist>
+                <label for="Phone no" required>Phoneno</label>
+                <input type="text" pattern="[A-Za-z]{3}" id="Phone no">
+                <input type="file" multiple>
+                <input type="submit"><br><br>
+                <video name="Videos" width="640" height="480" autoplay muted  controls>
+                <source src="Chella Kutti.mp4" type="video/mp4">
+                <p>The video is full of educational purposes only</p>
+                </video>
+        </form>
+    </body>
+</html>

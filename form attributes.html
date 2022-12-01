@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Form attributes</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30">
+    </head>
+    <body>
+        <form autocomplete="off">
+            <label for="Football teams" > choose your favourite football team:</label>
+            <select id="Football teams" size="4" multiple>
+                <option value="Real matrid">Real matrid</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Chelsea">Chelsea</option>
+                <option value="Manchester City">Manchester City</option>
+            </select><br><br><br>
+            <textarea name="Text to be written" rows="10" column="30">Enter your teams speciality here </textarea>
+            <br>
+            <br>
+            <input type="submit">
+            <button onclick="alert('please Stay for a moment')">Click me</button>
+            <button ondblclick="alert('please Stay for a moment')">Click me</button>
+            <fieldset >  
+                <legend>personal info</legend>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname" >Last name</label>
+                <input type="text" id="lname" name="lname">
+                <br>
+                <br>
+                <input type="submit">
+                <input type="reset">
+            </fieldset>
+            <input list="Teams">
+            <datalist id="Teams">
+                <option value="Real matrid">
+                <option value="Barcelona">
+                <option value="Chelsea">
+                <option value="Manchester City">
+            </datalist>
+            <label for="pwd" >password</label>
+            <input type="password" id="pwd" name="password"><br><br>
+            <input type="submit">
+            <br>
+            <br>
+            <label for="color">Choose the best color</label>
+            <input type="color" id="color" value="#f1f100">
+            <input type="image" src="Nature.jpg" alt="Submit" width="10" height="30"><br><br>
+            <input type="reset"></input>
+            <label for="date">Please select your DOB</label>
+            <input type="date" id="date"><br><br>
+            <input type="datetime-local" id="date" max="2001-09-2001">
+            <input type="date" id="fdate">
+            <br>
+            <br>
+            <input type="color" id="hcol" value="#ff2001">
+            <br>
+            <br>
+            <label for="email">Please Enter your email</label>
+            <input type="email" id="email"><br><br>
+            
+            <label id="filename">Please Select your file</label>
+        
+            <fieldset>
+            <input type="file" id="filename"><br><br>
+            <input type="week">
+        </fieldset>
+        <fieldset>
+            <legend>Phone number</legend>
+            <label for="phonenumber">Please Enter your number</label>
+            <input type="number" id="phonenumber" >
+        </fieldset>
+        <fieldset>
+            <label>Feedback</label>
+            <label for="ranged">Please give your Feedback</label>
+            <input type="range" id="ranged" name="ranged" min="0" max="100"><br><br>
+        </fieldset>
+        <fieldset>
+            <label for="telephone">please enter your phone no</label>
+            <input type="tel" pattern="[0-9]{3},[0-9]{2},[0-9]{3}" id="telephone" placeholder="123-45-678">
+            <input type="time" >
+        </fieldset>
+        </form>
+    </body>
+</html>

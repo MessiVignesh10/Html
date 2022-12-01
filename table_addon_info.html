@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table_additional_info</title>
+    </head>
+    <meta name="Viewport" content="Width=device-width,initialscale=1.0">
+    <link rel="icon" type="image/x-icon" href="Nature.jpg">
+    <body>
+        <style>
+            table,tr,td {
+                background-color:gray;
+            }
+            tr,td:hover {
+                background-color: aqua;
+                
+            }
+            tr:nth-child(Even)
+            {
+                background-color: blueviolet;
+            } 
+            tr,td{
+                border-left: 20px;
+                border-right: 20px;
+                border-top: 20px;
+                border-bottom: 20px;
+            }
+            tr,td {
+                padding-left:20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <colgroup>
+            <col span="1">
+            <col span ="3" style="background-color:pink">
+        </colgroup>
+        <table style=width: 20px;>
+            <caption>Friends</caption>
+            <tr style="height:20px">
+                <th colspan="2"><h4>Name</h4></th>
+                <th><h4>Place</h4></th>
+            </tr>
+            <tr style="height:50px">
+                <td>Vignesh</td>
+                <td>Subramaniam</td>
+                <td>Germany</td>
+            </tr>
+            <tr style="height:50px">
+                <td>Chinnaraj </td>
+                <td>Neymar</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Saravanan</td>
+                <td>Saro</td>
+                <td>Chicago</td>
+            </tr>
+            <tr>
+                <td>Vj krish</td>
+                <td>Alagukrishnan</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Bala</td>
+                <td>Balavannanathan</td>
+                <td>Miami</td>
+            </tr>
+            <tr>
+                <td>Karthik</td>
+                <td>Subburaj</td>
+                <td>Southamptom</td>
+            </tr>
+        </table>
+    </body>
+</html>
